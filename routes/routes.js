@@ -10,46 +10,42 @@ module.exports = app => {
 
         var notes = JSON.parse(data);
 
-        // API ROUTES
-        // ========================================================
+    // API ROUTES
     
-        // Setup the /api/notes get route
+        //GET notes route
         app.get("/api/notes", function(req, res) {
-            // Read the db.json file and return all saved notes as JSON.
+            //Returns all saved notes as JSON.
             res.json(notes);
         });
 
-        // Setup the /api/notes post route
+        //Post Notes Route    
         app.post("/api/notes", function(req, res) {
-            // Receives a new note, adds it to db.json, then returns the new note
+            // Adds new note to .json file and returns the note
             let newNote = req.body;
             notes.push(newNote);
             updateDb();
             return console.log("Added new note: "+newNote.title);
         });
 
-        // Retrieves a note with specific id
+        //Get Notes by ID
         app.get("/api/notes/:id", function(req,res) {
-            // display json for the notes array indices of the provided id
+            // display notes id
             res.json(notes[req.params.id]);
         });
 
-        // Deletes a note with specific id
+        //Delete Note by ID
         app.delete("/api/notes/:id", function(req, res) {
             notes.splice(req.params.id, 1);
             updateDb();
             console.log("Deleted note with id "+req.params.id);
         });
 
-        // VIEW ROUTES
-        // ========================================================
-
         // Display notes.html when /notes is accessed
         app.get('/notes', function(req,res) {
             res.sendFile(path.join(__dirname, "../public/notes.html"));
         });
         
-        // Display index.html when all other routes are accessed
+        // Display index.html 
         app.get('*', function(req,res) {
             res.sendFile(path.join(__dirname, "../public/index.html"));
         });
