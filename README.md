@@ -2,7 +2,7 @@
 
 Application that allows the user to record and delete notes. Application utilizes node.js, express.js, and heroku
 
-#Screenshots
+# Screenshots
 
 <img width="1717" alt="Screen Shot 2022-08-24 at 22 50 00" src="https://user-images.githubusercontent.com/105763252/186563432-8837b8fe-91a2-4f92-8e58-f29fe4811c61.png">
 
@@ -10,12 +10,12 @@ Application that allows the user to record and delete notes. Application utilize
 <img width="1016" alt="Screen Shot 2022-08-24 at 22 50 53" src="https://user-images.githubusercontent.com/105763252/186563439-e97d33ea-32df-497b-a69e-1ccb68ec383a.png">
 
 
-#UserStory
+# UserStory
 - AS A small business owner
 - I WANT to be able to write and save notes
 - SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
-#Acceptance Criteria
+# Acceptance Criteria
 - GIVEN a note-taking application
 - WHEN I open the Note Taker
 - THEN I am presented with a landing page with a link to a notes page
@@ -29,3 +29,10 @@ Application that allows the user to record and delete notes. Application utilize
 - THEN that note appears in the right-hand column
 - WHEN I click on the Write icon in the navigation at the top of the page
 - THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+
+# Live URL
+https://mikejmarin25.github.io/NoteTaker/
+
+# Github Repo
+https://github.com/mikejmarin25/NoteTaker/ 
+
