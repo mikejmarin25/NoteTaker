@@ -32,10 +32,13 @@ Application that allows the user to record and delete notes. Application utilize
 - THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
 # Live URL
-https://mikejmarin25.github.io/NoteTaker/
-
+ https://mikejmarin25.github.io/NoteTaker-Ch-11/
+ 
 # Github Repo
 https://github.com/mikejmarin25/NoteTaker/ 
+
+# Heroku Application Link
+https://note-taker-app-mike-marin.herokuapp.com/
 
 # Deployment
 
