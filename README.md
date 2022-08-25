@@ -36,3 +36,8 @@ https://mikejmarin25.github.io/NoteTaker/
 # Github Repo
 https://github.com/mikejmarin25/NoteTaker/ 
 
+# Deployment
+
+- run npm install, to install the dependencies
+- run node server.js and view application on port 3000
+
